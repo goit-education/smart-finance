@@ -24,7 +24,9 @@ function DashboardList(props) {
                 <p className={st.listItem__category}>{dataItem.category}</p>
               </div>
             </div>
-            <p className={st.listItem__amountExpense}>{dataItem.amount} грн.</p>
+            <p className={st.listItem__amountExpense}>
+              {dataItem.amount} {/*  грн.  */} руб.
+            </p>
             <ButtonDelete
               className={st.listItem__amountExpense_btn}
               transactionID={dataItem.id}
