@@ -45,7 +45,8 @@ export default function DashboardMenu() {
                 type="text"
                 name="balance"
                 value={amount}
-                placeholder="00.00 грн"
+                // placeholder="00.00 грн"
+                placeholder="00.00 руб"
                 className={css.balance__input}
                 onChange={handleChangeAmount}
                 required
@@ -75,9 +76,15 @@ export default function DashboardMenu() {
           <p className={css.balance__title}>Баланс:</p>
           <div className={css.balance_display}>
             <p className={css.balance__value}>
-              {userBalance.toLocaleString('ru-RU', {
+              {/* {userBalance.toLocaleString('ru-RU', {
                 style: 'currency',
                 currency: 'UAH',
+              })}
+                 */}
+
+              {userBalance.toLocaleString('ru-RU', {
+                style: 'currency',
+                currency: 'RUB',
               })}
             </p>
             <button
