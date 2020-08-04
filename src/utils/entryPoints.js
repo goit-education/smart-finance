@@ -6,7 +6,7 @@ const url = {
   categories: id =>
     id ? `${baseUrl}/categories/${id}` : `${baseUrl}/categories`,
   income: () => `${baseUrl}/income`,
-  authGoogle: () => `${baseUrl}/auth/google`,
+  authGoogle: () => `${baseUrl}/auth/2/google`,
   costs: id => (id ? `${baseUrl}/costs/${id}` : `${baseUrl}/costs`),
   products: search =>
     search ? `${baseUrl}/products?name=${search}` : `${baseUrl}/products`,
