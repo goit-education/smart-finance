@@ -1,4 +1,4 @@
-const baseUrl = 'https://smart-finance.goit.co.ua/api/v1';
+const baseUrl = 'https://smart-finance.goit.education/api/v1';
 
 const url = {
   register: () => `${baseUrl}/auth/register`,
@@ -6,7 +6,7 @@ const url = {
   categories: id =>
     id ? `${baseUrl}/categories/${id}` : `${baseUrl}/categories`,
   income: () => `${baseUrl}/income`,
-  authGoogle: () => `${baseUrl}/auth/2/google`,
+  authGoogle: () => `${baseUrl}/auth/google`,
   costs: id => (id ? `${baseUrl}/costs/${id}` : `${baseUrl}/costs`),
   products: search =>
     search ? `${baseUrl}/products?name=${search}` : `${baseUrl}/products`,
