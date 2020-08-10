@@ -11,17 +11,16 @@ import { SetIsModalAddIncomeOpen } from '../../redux/global/operations';
 
 export default function DashboardMenu() {
   const [amount, setAmount] = useState('');
-
   const dispatch = useDispatch();
-
   const userNewValue = useSelector(
     state => state.session.user.userData.userNew,
   );
-  useEffect(() => {
-    // console.log('userNewValue', userNewValue);
-  });
   const userBalance = useSelector(state => state.session.balance);
   const isModalAddIncome = useSelector(state => state.global.isModalAddIncome);
+
+  useEffect(() => {
+    // console.log('userNewValue', userNewValue);
+  }, []);
 
   const setBalanceFunc = data => dispatch(setBalanceOpearation(data));
   const openModalAddIncome = () => dispatch(SetIsModalAddIncomeOpen());
@@ -76,12 +75,6 @@ export default function DashboardMenu() {
           <p className={css.balance__title}>Баланс:</p>
           <div className={css.balance_display}>
             <p className={css.balance__value}>
-              {/* {userBalance.toLocaleString('ru-RU', {
-                style: 'currency',
-                currency: 'UAH',
-              })}
-                 */}
-
               {userBalance.toLocaleString('ru-RU', {
                 style: 'currency',
                 currency: 'RUB',

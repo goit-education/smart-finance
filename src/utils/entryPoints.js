@@ -1,4 +1,5 @@
 const baseUrl = 'https://smart-finance.goit.education/api/v1';
+// const baseUrl = 'http://localhost:5000/api/v1';
 
 const url = {
   register: () => `${baseUrl}/auth/register`,

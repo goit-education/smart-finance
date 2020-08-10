@@ -23,7 +23,8 @@ export const getProductsOperation = search => (dispatch, getStore) => {
   }
 
   dispatch(globalFetchStart());
-  return getProductsFetch(search, token)
+
+  getProductsFetch(search, token)
     .then(resp => {
       if (resp.status === 200) {
         const productsFromDB = resp.data.products;

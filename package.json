@@ -2,7 +2,7 @@
   "name": "fe_kapusta_smart_finance",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://smart-finance.goit.co.ua/",
+  "homepage": "https://smart-finance.goit.education/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

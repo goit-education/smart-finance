@@ -8,7 +8,7 @@ import Summary from '../Summary/Summary';
 
 import { useWindowSize } from '../../utils/hooks';
 import { getTransactionsOperation } from '../../redux/transactions/operations';
-
+import { getProductsOperation } from '../../redux/products/operations';
 import st from './DashboardPanel.module.css';
 
 function DashboardPanel() {
@@ -24,9 +24,10 @@ function DashboardPanel() {
   };
 
   useEffect(() => {
-    const getTransactions = () => dispatch(getTransactionsOperation());
-    getTransactions();
+    dispatch(getTransactionsOperation());
+    dispatch(getProductsOperation());
   }, [dispatch]);
+
   const tableData = costs
     .filter(
       cost =>

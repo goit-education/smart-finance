@@ -57,6 +57,7 @@ export const getCategoryFetch = token =>
 // Costs
 export const setCostsFetch = (data, token) =>
   axios.post(api.costs(), data, setToken(token));
+
 export const delCosts = (data, token) =>
   axios.delete(api.costs(data), setToken(token));
 
