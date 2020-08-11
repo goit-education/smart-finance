@@ -45,14 +45,14 @@ const StatisticMenu = ({
           Баланс :
           {balance.toLocaleString('ru-RU', {
             style: 'currency',
-            currency: 'UAH',
+            currency: 'RUB',
           })}
         </p>
 
         <p className={styles.dateBalanceSum}>
           {balance.toLocaleString('ru-RU', {
             style: 'currency',
-            currency: 'UAH',
+            currency: 'RUB',
           })}
         </p>
       </div>
