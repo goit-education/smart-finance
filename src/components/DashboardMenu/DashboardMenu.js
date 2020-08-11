@@ -44,7 +44,6 @@ export default function DashboardMenu() {
                 type="text"
                 name="balance"
                 value={amount}
-                // placeholder="00.00 грн"
                 placeholder="00.00 руб"
                 className={css.balance__input}
                 onChange={handleChangeAmount}

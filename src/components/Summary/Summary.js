@@ -26,7 +26,6 @@ const Summary = props => {
             </p>
             <p className={st.tableAmount}>
               {monthData.amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ')}{' '}
-              {/* грн */}
               руб
             </p>
           </button>

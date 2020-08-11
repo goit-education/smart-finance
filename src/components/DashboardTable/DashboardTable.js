@@ -43,7 +43,7 @@ function DashboardTable(props) {
                 {dataItem.category}
               </td>
               <td className={st.dataCellAmount} width="25%">
-                {dataItem.amount} {/* грн. */} руб.
+                {dataItem.amount} руб.
               </td>
               <td className={st.dataCell} width="7%">
                 <ButtonDelete transactionID={dataItem.id} />

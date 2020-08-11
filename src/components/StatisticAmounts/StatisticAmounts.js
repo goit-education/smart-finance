@@ -9,16 +9,12 @@ function StatisticAmounts({ costsSum, incomeSum }) {
       <div className={css.wrapper}>
         <div className={css.column}>
           <p className={css.stat_title}>Расходы:</p>
-          <p className={css.stat_exp}>
-            -{costsSum} {/* грн */}руб
-          </p>
+          <p className={css.stat_exp}>-{costsSum} руб.</p>
         </div>
         <div className={css.separate} />
         <div className={css.column}>
           <p className={css.stat_title}>Доходы:</p>
-          <p className={css.stat_inc}>
-            {incomeSum} {/* грн */}руб
-          </p>
+          <p className={css.stat_inc}>{incomeSum} руб.</p>
         </div>
       </div>
     </Panel>
